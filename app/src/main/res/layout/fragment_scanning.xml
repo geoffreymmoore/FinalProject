@@ -1,0 +1,426 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.moore.finalproject.ScanningFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/scanningTV"
+            style="@style/AppTheme"
+            android:layout_marginTop="0dp"
+            android:text="@string/scanning" />
+
+        <TextView
+            android:id="@+id/yesTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scanningTV"
+            android:text="@string/yes"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/noTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scanningTV"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/yesTV"
+            android:text="@string/no"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:id="@+id/coversRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yesTV"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/coversYesRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:checked="true"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+
+            <RadioButton
+                android:id="@+id/coversNoRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/coversTV"
+            style="@style/AppTheme"
+            android:layout_below="@id/yesTV"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/coversRadioGroup"
+            android:text="@string/covers" />
+
+        <RadioGroup
+            android:id="@+id/redwellCoversRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coversRadioGroup"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/redwellCoversYesRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:checked="true"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+
+            <RadioButton
+                android:id="@+id/redwellCoversNoRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/redwellCoversTV"
+            style="@style/AppTheme"
+            android:layout_above="@+id/redwellTabsRadioGroup"
+            android:layout_below="@id/coversRadioGroup"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/redwellCoversRadioGroup"
+            android:text="@string/redwell_folder_covers" />
+
+        <RadioGroup
+            android:id="@+id/redwellTabsRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/redwellCoversRadioGroup"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/redwellTabsYesRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:checked="true"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+
+            <RadioButton
+                android:id="@+id/redwellTabsNoRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/redwellTabsTV"
+            style="@style/AppTheme"
+            android:layout_below="@id/redwellCoversRadioGroup"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/redwellTabsRadioGroup"
+            android:text="@string/redwell_folder_tabs" />
+
+        <RadioGroup
+            android:id="@+id/dividerTabsRG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/redwellTabsRadioGroup"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/dividersYesRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:checked="true"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+
+            <RadioButton
+                android:id="@+id/dividersNoRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/dividersTV"
+            style="@style/AppTheme"
+            android:layout_below="@id/redwellTabsRadioGroup"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/dividerTabsRG"
+            android:text="@string/divider_tabs" />
+
+        <RadioGroup
+            android:id="@+id/postItsRG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dividerTabsRG"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/postItsYesRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:checked="true"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+
+            <RadioButton
+                android:id="@+id/postItsNoRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/postItsTV"
+            style="@style/AppTheme"
+            android:layout_below="@id/dividerTabsRG"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/postItsRG"
+            android:text="@string/post_it_notes" />
+
+        <RadioGroup
+            android:id="@+id/coloredSheetsRG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/postItsRG"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/coloredSheetsYesRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:checked="true"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+
+            <RadioButton
+                android:id="@+id/coloredSheetsNoRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/coloredSheetsTV"
+            style="@style/AppTheme"
+            android:layout_below="@id/postItsRG"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/coloredSheetsRG"
+            android:text="@string/colored_sheets" />
+
+        <RadioGroup
+            android:id="@+id/binderSpinesRG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coloredSheetsRG"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/binderSpinesYesRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:checked="true"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+
+            <RadioButton
+                android:id="@+id/binderSpinesNoRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/binderSpinesTB"
+            style="@style/AppTheme"
+            android:layout_below="@id/coloredSheetsRG"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/binderSpinesRG"
+            android:text="@string/binder_spines" />
+
+        <RadioGroup
+            android:id="@+id/envelopesRG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/binderSpinesRG"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/envelopesYesRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:checked="true"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+
+            <RadioButton
+                android:id="@+id/envelopesNoRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/envelopesTV"
+            style="@style/AppTheme"
+            android:layout_below="@id/binderSpinesRG"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/envelopesRG"
+            android:text="@string/envelopes" />
+
+        <RadioGroup
+            android:id="@+id/standardLngRG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/envelopesRG"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/standardLngYesRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:checked="true"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+
+            <RadioButton
+                android:id="@+id/standardLngNoRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/standardLngTV"
+            style="@style/AppTheme"
+            android:layout_below="@id/envelopesRG"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/standardLngRG"
+            android:text="@string/standard_language" />
+
+        <RadioGroup
+            android:id="@+id/carbonCopiesRG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/standardLngRG"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/carbonCopiesYesRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:checked="true"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+
+            <RadioButton
+                android:id="@+id/carbonCopiesNoRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/carbonCopiesTV"
+            style="@style/AppTheme"
+            android:layout_below="@id/standardLngRG"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/carbonCopiesRG"
+            android:text="@string/carbon_copies_duplicates" />
+
+        <RadioGroup
+            android:id="@+id/oversizeRG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/carbonCopiesRG"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/oversizeYesRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:checked="true"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+
+            <RadioButton
+                android:id="@+id/oversizeNoRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/oversizeTV"
+            style="@style/AppTheme"
+            android:layout_below="@id/carbonCopiesRG"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/oversizeRG"
+            android:text="@string/oversize" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/submitReviewButton"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/oversizeRG"
+            android:text="@string/submit"
+            android:textColor="#000000"
+            android:layout_marginBottom="35dp"
+            android:onClick="submitClick"
+            android:textAllCaps="false" />
+    </RelativeLayout>
+
+
+</ScrollView>

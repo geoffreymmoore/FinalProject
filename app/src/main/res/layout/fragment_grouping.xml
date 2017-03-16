@@ -1,0 +1,84 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="1dp"
+    android:fadeScrollbars="false"
+    android:fillViewport="false"
+    tools:context="com.moore.finalproject.GroupingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+
+        <TextView
+            android:id="@+id/docLvlTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/doc_level" />
+
+        <RadioGroup
+            android:id="@+id/groupingRadioGroup"
+            style="@style/AppTheme.RadioButtons"
+            android:layout_below="@id/docLvlTV">
+
+            <RadioButton
+                android:id="@+id/lowestRB"
+                style="@style/AppTheme.RadioButtons"
+                android:checked="true"
+                android:text="@string/lowest" />
+
+            <RadioButton
+                android:id="@+id/outerMostRB"
+                style="@style/AppTheme.RadioButtons"
+                android:text="@string/outer_most" />
+
+            <RadioButton
+                android:id="@+id/lddRB"
+                style="@style/AppTheme.RadioButtons"
+                android:text="@string/ldd" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/groupingTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/groupingRadioGroup"
+            android:text="@string/grouping" />
+
+        <CheckBox
+            android:id="@+id/groupingRedwellCB"
+            style="@style/AppTheme.CheckBox"
+            android:layout_below="@id/groupingTV"
+            android:text="@string/redwell" />
+
+        <CheckBox
+            android:id="@+id/groupingBinderCB"
+            style="@style/AppTheme.CheckBox"
+            android:layout_below="@id/groupingRedwellCB"
+            android:text="@string/binder" />
+
+        <CheckBox
+            android:id="@+id/groupingFolderCB"
+            style="@style/AppTheme.CheckBox"
+            android:layout_below="@id/groupingBinderCB"
+            android:text="@string/folder" />
+
+        <CheckBox
+            android:id="@+id/groupingUpCB"
+            style="@style/AppTheme.CheckBox"
+            android:layout_below="@id/groupingFolderCB"
+            android:text="@string/_1_up_from_lowest" />
+
+        <CheckBox
+            android:id="@+id/groupingOutermostCB"
+            style="@style/AppTheme.CheckBox"
+            android:layout_below="@id/groupingUpCB"
+            android:text="@string/outermost"
+            android:layout_marginBottom="45dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

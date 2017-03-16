@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.moore.finalproject.DisplayActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/fragment"
+            android:name="com.moore.finalproject.ClientFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <fragment
+            android:id="@+id/fragment2"
+            android:name="com.moore.finalproject.NamingFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment" />
+
+        <fragment
+            android:id="@+id/fragment3"
+            android:name="com.moore.finalproject.GroupingFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment2" />
+
+        <fragment
+            android:id="@+id/fragment4"
+            android:name="com.moore.finalproject.ScanningFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment3" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/returnButton"
+            android:text="Return"
+            android:layout_below="@id/fragment4"
+            android:layout_marginBottom="45dp"
+            android:onClick="returnClick"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Final</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="client_name">Client Name:</string>
+    <string name="contact_name">Contact Name:</string>
+    <string name="address">Address:</string>
+    <string name="client_matter">Client Matter #:</string>
+    <string name="email_address">Email Address:</string>
+    <string name="phone_number">Phone Number:</string>
+    <string name="prefix">Prefix:</string>
+    <string name="box">Box#/Exhibit/Other:</string>
+    <string name="outermost">Outermost</string>
+    <string name="_1_up_from_lowest">1 up from Lowest</string>
+    <string name="folder">Folder</string>
+    <string name="binder">Binder</string>
+    <string name="redwell">Redwell</string>
+    <string name="grouping">Grouping</string>
+    <string name="ldd">LDD</string>
+    <string name="outer_most">Outer Most</string>
+    <string name="lowest">Lowest</string>
+    <string name="doc_level">Doc. Level</string>
+    <string name="starting_volume">Starting Volume:</string>
+    <string name="file_name_different_from_control">File Name Different from Control #</string>
+    <string name="file_name_same_as_control">File Name same as Control #</string>
+    <string name="naming">Naming:</string>
+    <string name="incrementing">Incrementing:</string>
+    <string name="scanning">Scanning:</string>
+    <string name="different_control_number">Different Control Number File Name:</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="covers">Covers</string>
+    <string name="redwell_folder_covers">Redwell/Folder Covers</string>
+    <string name="redwell_folder_tabs">Redwell/Folder Tabs</string>
+    <string name="divider_tabs">Divider Tabs</string>
+    <string name="post_it_notes">Post-It Notes</string>
+    <string name="colored_sheets">Colored Sheets</string>
+    <string name="binder_spines">Binder Spines</string>
+    <string name="envelopes">Envelopes</string>
+    <string name="standard_language">Standard Language</string>
+    <string name="carbon_copies_duplicates">Carbon Copies Duplicates</string>
+    <string name="oversize">Oversize</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_create">CreateActivity</string>
+</resources>
